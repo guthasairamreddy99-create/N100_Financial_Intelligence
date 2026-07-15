@@ -1,0 +1,13 @@
+File,Rows,Columns,Missing Values,Duplicate Rows
+analysis.xlsx,21,6,0,0
+balancesheet.xlsx,1313,13,0,0
+cashflow.xlsx,1188,7,8,0
+companies.xlsx,93,12,9,0
+documents.xlsx,1586,4,52,0
+financial_ratios.xlsx,1184,16,170,0
+market_cap.xlsx,552,9,0,0
+peer_groups.xlsx,56,4,0,0
+profitandloss.xlsx,1277,15,231,0
+prosandcons.xlsx,17,4,6,0
+sectors.xlsx,92,6,0,0
+stock_prices.xlsx,5520,9,0,0
