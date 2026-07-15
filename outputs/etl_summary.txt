@@ -1,0 +1,23 @@
+N100 Financial Intelligence Platform
+Sprint 1 ETL Summary
+
+Datasets Loaded : 12
+
+Rows Imported
+
+analysis : 21
+balancesheet : 1313
+cashflow : 1188
+companies : 93
+documents : 1586
+financial_ratios : 1184
+market_cap : 552
+peer_groups : 56
+profitandloss : 1277
+prosandcons : 17
+sectors : 92
+stock_prices : 5520
+
+Database : nifty100.db
+
+Status : SUCCESS
