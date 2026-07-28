@@ -4,7 +4,7 @@ An interactive financial analytics dashboard built using **Python, Streamlit, SQ
 
 ## 🌐 Live Demo
 
-🔗 https://YOUR-STREAMLIT-URL.streamlit.app
+🔗 https://n100financialintelligence-jzhxxg2ubmafrphcwhy8pw.streamlit.app/
 
 ---
 
