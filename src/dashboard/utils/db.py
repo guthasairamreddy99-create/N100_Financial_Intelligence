@@ -215,3 +215,19 @@ def get_analysis():
 
     finally:
         conn.close()
+
+@st.cache_data(ttl=600)
+def get_company_details(company_id):
+    conn = get_connection()
+
+    query = """
+    SELECT *
+    FROM companies
+    WHERE id = ?
+    """
+
+    df = pd.read_sql(query, conn, params=[company_id])
+
+    conn.close()
+
+    return df

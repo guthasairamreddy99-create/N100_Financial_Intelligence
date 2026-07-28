@@ -27,7 +27,7 @@ header_map = {
     "companies.xlsx": 1,
     "documents.xlsx": 1,
     "market_cap.xlsx": 0,
-    "peer_groups.xlsx": 1,
+    "peer_groups.xlsx": 0,
     "profitandloss.xlsx": 1,
     "prosandcons.xlsx": 1,
     "sectors.xlsx": 0,
