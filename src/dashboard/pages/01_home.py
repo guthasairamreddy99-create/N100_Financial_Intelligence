@@ -1,96 +1,82 @@
-import sys
-from pathlib import Path
-
-# Add src folder to Python path
-ROOT = Path(__file__).resolve().parents[2]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
 import streamlit as st
-
-from dashboard.utils.db import (
-    get_companies,
-    get_ratios,
-    get_market_cap,
-    get_sectors,
-)
+import pandas as pd
+import os
 
 st.set_page_config(
     page_title="Home",
+    page_icon="🏠",
     layout="wide"
 )
 
 st.title("🏠 N100 Financial Intelligence Dashboard")
-st.markdown("### Dashboard Overview")
+st.markdown("---")
 
-# -----------------------------
-# Load Data
-# -----------------------------
-companies = get_companies()
-ratios = get_ratios("ABB")      # Temporary until company selector is added
-market = get_market_cap()
-sectors = get_sectors()
+st.markdown("""
+Welcome to the **N100 Financial Intelligence Platform**.
 
-# -----------------------------
-# KPI Cards
-# -----------------------------
+This dashboard provides financial analytics, peer comparison,
+screening, trend analysis, capital allocation insights,
+and AI-generated reports for Nifty 100 companies.
+""")
+
+st.markdown("## 📊 Project Overview")
+
 col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.metric("Companies", len(companies))
+company_count = 0
+report_count = 0
+avg_confidence = 0
 
-with col2:
-    avg_roe = ratios["return_on_equity_pct"].mean()
-    st.metric("Avg ROE", f"{avg_roe:.2f}%")
+if os.path.exists("outputs/company_insights.csv"):
+    company_df = pd.read_csv("outputs/company_insights.csv")
+    company_count = len(company_df)
 
-with col3:
-    avg_margin = ratios["net_profit_margin_pct"].mean()
-    st.metric("Avg Net Margin", f"{avg_margin:.2f}%")
+    if "confidence" in company_df.columns:
+        avg_confidence = round(company_df["confidence"].mean(), 2)
 
-col4, col5, col6 = st.columns(3)
+if os.path.exists("outputs/report_summary.csv"):
+    report_df = pd.read_csv("outputs/report_summary.csv")
+    report_count = len(report_df)
 
-with col4:
-    st.metric("Market Cap Records", len(market))
+col1.metric("Companies Analyzed", company_count)
+col2.metric("Reports Generated", report_count)
+col3.metric("Average Confidence", f"{avg_confidence}%")
 
-with col5:
-    st.metric("Sectors", sectors["broad_sector"].nunique())
+st.markdown("---")
 
-with col6:
-    st.metric("Sub Sectors", sectors["sub_sector"].nunique())
+st.subheader("📌 Available Modules")
 
-st.divider()
+modules = [
+    "🏢 Company Profile",
+    "🔍 Stock Screener",
+    "📊 Peer Comparison",
+    "📈 Trend Analysis",
+    "🏭 Sector Analysis",
+    "💰 Capital Allocation",
+    "📄 Reports",
+    "📋 Portfolio Summary"
+]
 
-# -----------------------------
-# Sector Distribution
-# -----------------------------
-st.subheader("Sector Distribution")
+for module in modules:
+    st.write(f"✅ {module}")
 
-sector_count = (
-    sectors.groupby("broad_sector")
-    .size()
-    .reset_index(name="Companies")
-)
+st.markdown("---")
 
+st.subheader("📂 Project Outputs")
 
-st.bar_chart(
-    sector_count.set_index("broad_sector")
-)
+files = [
+    "outputs/company_insights.csv",
+    "outputs/cashflow_insights.csv",
+    "outputs/capital_allocation_report.csv",
+    "outputs/report_summary.csv"
+]
 
-st.divider()
+for file in files:
+    if os.path.exists(file):
+        st.success(f"✔ {file}")
+    else:
+        st.error(f"✘ {file} not found")
 
-# -----------------------------
-# Top Companies
-# -----------------------------
-st.subheader("Top 5 Companies")
+st.markdown("---")
 
-top = companies[
-    ["id", "company_name", "roe_percentage"]
-].sort_values(
-    by="roe_percentage",
-    ascending=False
-)
-
-st.dataframe(
-    top.head(5),
-    use_container_width=True
-)
+st.info("Use the sidebar to navigate through the dashboard modules.")

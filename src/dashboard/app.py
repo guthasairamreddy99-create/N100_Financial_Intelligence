@@ -1,19 +1,17 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Nifty 100 Analytics",
+    page_title="N100 Financial Intelligence",
     page_icon="📈",
     layout="wide",
-    initial_sidebar_state="expanded"
 )
 
-st.title("📈 Nifty 100 Analytics Dashboard")
+st.title("📈 N100 Financial Intelligence Platform")
 
-st.markdown(
-    """
-Welcome to the **N100 Financial Intelligence Platform**.
+st.markdown("""
+Welcome to the **N100 Financial Intelligence Dashboard**.
 
-### Available Dashboard Modules
+### Dashboard Modules
 
 - 🏠 Home
 - 🏢 Company Profile
@@ -22,10 +20,10 @@ Welcome to the **N100 Financial Intelligence Platform**.
 - 📈 Trend Analysis
 - 🏭 Sector Analysis
 - 💰 Capital Allocation
-- 📄 Annual Reports
+- 📄 Reports
+- 📋 Portfolio Summary
 
-Use the sidebar to navigate through the dashboard.
-"""
-)
+Use the **sidebar** to open any module.
+""")
 
-st.success("Dashboard initialized successfully!")
+st.info("Select a page from the sidebar.")

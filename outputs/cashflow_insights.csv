@@ -1,0 +1,101 @@
+company_id,operating_activity,investing_activity,financing_activity,net_cash_flow,pros,cons,confidence,rating
+TCS,44338.0,6091.0,-48536.0,1893.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+ABB,1213.0,-416.0,-745.0,52.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ADANIENSOL,6038.0,-4943.0,-543.0,551.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ADANIENT,10312.0,-18767.0,8879.0,424.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+ADANIGREEN,7713.0,-21060.0,13953.0,606.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+ADANIPORTS,15018.0,-6768.0,-7800.0,450.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ADANIPOWER,14170.0,3481.0,-16864.0,787.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+AMBUJACEM,5646.0,-8941.0,5689.0,2394.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+APOLLOHOSP,1920.0,-1537.0,-311.0,72.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ASIANPAINT,6104.0,-2548.0,-2982.0,573.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+AGTL,955.0,-752.0,-78.0,125.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+AXISBANK,-5555.0,-9001.0,22341.0,7785.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+BAJAJ-AUTO,6558.0,-72.0,-6167.0,319.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+BAJAJFINSV,-68674.0,-10960.0,82709.0,3075.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+BAJAJHLDNG,1941.0,-472.0,-1455.0,14.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+BAJFINANCE,-72760.0,-7171.0,82415.0,2484.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+BANKBARODA,-6274.0,-1285.0,5476.0,-2084.0,Investing for Future Growth,Negative Operating Cash Flow; Negative Net Cash Flow; High Financing Dependence,60,Needs Improvement
+BEL,4659.0,-5924.0,-1475.0,-2739.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+BHARTIARTL,78898.0,-51089.0,-27778.0,31.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+BHEL,-3713.0,1331.0,2656.0,274.0,Positive Net Cash Flow,Negative Operating Cash Flow; High Financing Dependence,60,Needs Improvement
+BOSCHLTD,1253.0,283.0,-1452.0,84.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+BPCL,35936.0,-10521.0,-25427.0,-12.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+BRITANNIA,2573.0,477.0,-2830.0,219.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+CANBK,15046.0,-1750.0,-3834.0,9462.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+CHOLAFIN,-35683.0,-2855.0,38471.0,-66.0,Investing for Future Growth,Negative Operating Cash Flow; Negative Net Cash Flow; High Financing Dependence,60,Needs Improvement
+CIPLA,4134.0,-2982.0,-1200.0,-49.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+COALINDIA,18103.0,-4486.0,-13899.0,-282.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+DABUR,2013.0,-971.0,-1161.0,-119.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+DIVISLAB,1261.0,-269.0,-799.0,193.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+DLF,2539.0,-1529.0,177.0,1186.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+DMART,2746.0,-2468.0,-148.0,130.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+DRREDDY,4543.0,-4034.0,-376.0,133.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+EICHERMOT,3724.0,-2834.0,-844.0,45.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+GAIL,12586.0,-8226.0,-3457.0,902.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+GODREJCP,2070.0,-3435.0,1406.0,41.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+GRASIM,-10719.0,-23114.0,33908.0,75.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+HAL,8226.0,-6412.0,-1999.0,-185.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+HAVELLS,1953.0,-1618.0,-534.0,-199.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+HCLTECH,22448.0,-6608.0,-15464.0,376.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+HDFCBANK,19069.0,16600.0,-3983.0,31687.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+HDFCLIFE,10721.0,-13614.0,-403.0,-3296.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+HEROMOTOCO,4923.0,-1828.0,-2717.0,379.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+HINDALCO,24056.0,-14267.0,-10817.0,-1028.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+HINDUNILVR,15469.0,-5324.0,-10034.0,111.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ICICIBANK,157284.0,-144737.0,13765.0,26312.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+ICICIGI,2407.0,-1921.0,-355.0,131.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ICICIPRULI,-7315.0,7420.0,-88.0,17.0,Positive Net Cash Flow; Debt Reduction / Shareholder Returns,Negative Operating Cash Flow,85,Good
+INDIGO,21183.0,-11759.0,-9979.0,-555.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+INDUSINDBK,-16843.0,-625.0,-2242.0,-19710.0,Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Operating Cash Flow; Negative Net Cash Flow,75,Average
+INFY,25210.0,-5093.0,-17504.0,2613.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+IOC,71099.0,-31464.0,-39385.0,250.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+IRCTC,882.0,-215.0,-404.0,262.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+IRFC,7914.0,-8.0,-8046.0,-140.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+ITC,17179.0,1563.0,-18551.0,191.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+JINDALSTEL,6008.0,-8344.0,1381.0,-955.0,Positive Operating Cash Flow; Investing for Future Growth,Negative Net Cash Flow; High Financing Dependence,75,Average
+JIOFIN,-678.0,1441.0,-753.0,11.0,Positive Net Cash Flow; Debt Reduction / Shareholder Returns,Negative Operating Cash Flow,85,Good
+JSWENERGY,6234.0,-8197.0,1675.0,-289.0,Positive Operating Cash Flow; Investing for Future Growth,Negative Net Cash Flow; High Financing Dependence,75,Average
+JSWSTEEL,12078.0,-14467.0,-5005.0,-7394.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+KOTAKBANK,15685.0,-8919.0,15515.0,22281.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+LICI,26122.0,-25269.0,-4427.0,-3574.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+LODHA,2512.0,-2947.0,951.0,516.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+LT,18266.0,2179.0,-25413.0,-4968.0,Positive Operating Cash Flow; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+LTIM,5670.0,-3918.0,-2269.0,-518.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+M&M,-5630.0,-5615.0,12281.0,1037.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+MARUTI,16801.0,-11865.0,-4062.0,874.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+MOTHERSON,7569.0,-6644.0,1281.0,2205.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+NAUKRI,702.0,-852.0,120.0,-29.0,Positive Operating Cash Flow; Investing for Future Growth,Negative Net Cash Flow; High Financing Dependence,75,Average
+NESTLEIND,4175.0,-1237.0,-3135.0,-198.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+NHPC,6938.0,-5968.0,-581.0,388.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+NTPC,40785.0,-32141.0,-8246.0,398.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ONGC,99263.0,-57203.0,-45650.0,-3591.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+PFC,-97820.0,-3409.0,101261.0,32.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+PIDILITIND,2724.0,-1769.0,-742.0,212.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+PNB,-27939.0,-1506.0,3518.0,-25928.0,Investing for Future Growth,Negative Operating Cash Flow; Negative Net Cash Flow; High Financing Dependence,60,Needs Improvement
+POWERGRID,37290.0,-13114.0,-25903.0,-1728.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+RECLTD,-57723.0,-1831.0,59588.0,34.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+RELIANCE,158788.0,-113581.0,-16646.0,28561.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+SBILIFE,29122.0,-31221.0,-227.0,-2327.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+SBIN,21632.0,-3476.0,-9896.0,8260.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+SHREECEM,3347.0,-1418.0,-1710.0,220.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+SHRIRAMFIN,-31101.0,-258.0,27609.0,-3750.0,Investing for Future Growth,Negative Operating Cash Flow; Negative Net Cash Flow; High Financing Dependence,60,Needs Improvement
+SIEMENS,1670.0,-502.0,-523.0,644.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+SUNPHARMA,12135.0,-763.0,-6710.0,4662.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TATACONSUM,1937.0,-1911.0,256.0,281.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+TATAMOTORS,67915.0,-22782.0,-37006.0,8128.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TATAPOWER,12596.0,-9027.0,-4497.0,-928.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+TATASTEEL,20301.0,-14253.0,-11097.0,-5049.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+TECHM,6376.0,-1318.0,-4767.0,291.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TITAN,1695.0,-189.0,-1329.0,177.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TORNTPHARM,3266.0,-160.0,-2780.0,327.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TRENT,1349.0,-508.0,-629.0,211.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+TVSMOTOR,-1253.0,-1001.0,2759.0,505.0,Positive Net Cash Flow; Investing for Future Growth,Negative Operating Cash Flow; High Financing Dependence,75,Average
+ULTRACEMCO,10898.0,-8789.0,-1926.0,183.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+UNIONBANK,19930.0,-1394.0,-11489.0,7047.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+UNITDSPR,1118.0,226.0,-407.0,937.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+VBL,2391.0,-3288.0,985.0,88.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth,High Financing Dependence,85,Good
+VEDL,35654.0,-13676.0,-26092.0,-4114.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good
+WIPRO,17622.0,1144.0,-18257.0,509.0,Positive Operating Cash Flow; Positive Net Cash Flow; Debt Reduction / Shareholder Returns,,95,Excellent
+ZOMATO,646.0,-348.0,-207.0,91.0,Positive Operating Cash Flow; Positive Net Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,,95,Excellent
+ZYDUSLIFE,3228.0,-1492.0,-1810.0,-75.0,Positive Operating Cash Flow; Investing for Future Growth; Debt Reduction / Shareholder Returns,Negative Net Cash Flow,85,Good

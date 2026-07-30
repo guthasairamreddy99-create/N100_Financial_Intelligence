@@ -1,106 +1,127 @@
 import streamlit as st
 import pandas as pd
-
-from utils.db import (
-    get_companies,
-    get_company_details,
-    get_pl,
-    get_bs,
-    get_cf,
-    get_ratios,
-)
+import os
 
 st.set_page_config(
-    page_title="Annual Reports",
+    page_title="Reports",
     page_icon="📄",
-    layout="wide",
+    layout="wide"
 )
 
-st.title("📄 Annual Reports")
+st.title("📄 Financial Reports")
+
+# -------------------------------------
+# Report Summary
+# -------------------------------------
+summary_file = "outputs/report_summary.csv"
+
+if not os.path.exists(summary_file):
+    st.error("report_summary.csv not found.")
+    st.stop()
+
+summary_df = pd.read_csv(summary_file)
+
+st.subheader("📊 Report Summary")
+
+col1, col2, col3 = st.columns(3)
+
+col1.metric(
+    "Total Reports",
+    len(summary_df)
+)
+
+col2.metric(
+    "Average PDF Size",
+    f"{summary_df['size_kb'].mean():.2f} KB"
+)
+
+col3.metric(
+    "Largest Report",
+    summary_df.loc[
+        summary_df["size_kb"].idxmax(),
+        "company_id"
+    ]
+)
+
 st.markdown("---")
 
-# ==========================================
-# COMPANY SELECTOR
-# ==========================================
+# -------------------------------------
+# Reports Table
+# -------------------------------------
+st.subheader("Generated PDF Reports")
 
-companies = get_companies()
+st.dataframe(
+    summary_df,
+    use_container_width=True
+)
 
+st.markdown("---")
+
+# -------------------------------------
+# Select Company
+# -------------------------------------
 company = st.selectbox(
     "Select Company",
-    companies["company_name"]
+    summary_df["company_id"]
 )
 
-company_id = companies.loc[
-    companies["company_name"] == company,
-    "id"
-].values[0]
+selected = summary_df[
+    summary_df["company_id"] == company
+].iloc[0]
 
-details = get_company_details(company_id)
-pl = get_pl(company_id)
-bs = get_bs(company_id)
-cf = get_cf(company_id)
-ratios = get_ratios(company_id)
+st.subheader("Report Details")
 
-st.success(f"Annual Report for {company}")
+c1, c2 = st.columns(2)
+
+c1.metric(
+    "Company",
+    selected["company_id"]
+)
+
+c2.metric(
+    "PDF Size",
+    f"{selected['size_kb']} KB"
+)
+
+st.write("**Filename:**", selected["filename"])
 
 st.markdown("---")
 
-st.header("🏢 Company Information")
-
-st.dataframe(
-    details,
-    use_container_width=True,
-    hide_index=True,
-)
-
-st.header("💰 Profit & Loss")
-
-st.dataframe(
-    pl,
-    use_container_width=True,
-    hide_index=True,
-)
-
-st.header("🏦 Balance Sheet")
-
-st.dataframe(
-    bs,
-    use_container_width=True,
-    hide_index=True,
-)
-
-st.header("💵 Cash Flow")
-
-st.dataframe(
-    cf,
-    use_container_width=True,
-    hide_index=True,
-)
-
-st.header("📊 Financial Ratios")
-
-st.dataframe(
-    ratios,
-    use_container_width=True,
-    hide_index=True,
-)
-
-st.markdown("---")
-
-report = pd.concat(
-    [
-        details,
-        pl,
-        bs,
-        cf,
-        ratios,
-    ],
-    axis=1,
-)
+# -------------------------------------
+# Download Summary CSV
+# -------------------------------------
+csv = summary_df.to_csv(index=False).encode("utf-8")
 
 st.download_button(
-    "📥 Download Complete Report",
-    report.to_csv(index=False),
-    file_name=f"{company}_annual_report.csv",
-    mime="text/csv",
+    "📥 Download Report Summary",
+    csv,
+    file_name="report_summary.csv",
+    mime="text/csv"
 )
+
+# -------------------------------------
+# List PDF Files
+# -------------------------------------
+st.subheader("Available PDF Files")
+
+pdf_folder = "outputs/pdf_reports"
+
+if os.path.exists(pdf_folder):
+
+    pdf_files = sorted(
+        [
+            f for f in os.listdir(pdf_folder)
+            if f.endswith(".pdf")
+        ]
+    )
+
+    if pdf_files:
+        for pdf in pdf_files:
+            st.success(pdf)
+    else:
+        st.warning("No PDF reports found.")
+
+else:
+    st.warning("PDF reports folder not found.")
+
+st.success("Reports module loaded successfully.")

@@ -1,0 +1,6 @@
+company_id,pros,cons,confidence,rating
+HDFCBANK,Excellent Stock CAGR; Strong Profit Growth; Strong Sales Growth,,95,Excellent
+SBILIFE,Strong Profit Growth; Strong Sales Growth,Negative Stock CAGR,95,Excellent
+TCS,Excellent Stock CAGR; Strong ROE,,95,Excellent
+WIPRO,Excellent Stock CAGR,Negative Stock CAGR; Weak Profit Growth; Weak Sales Growth,60,Needs Improvement
+INFY,Excellent Stock CAGR; Strong ROE,Weak Sales Growth,95,Excellent
