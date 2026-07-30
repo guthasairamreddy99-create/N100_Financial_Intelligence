@@ -10,18 +10,20 @@ st.set_page_config(
 
 st.title("📈 Financial Trend Analysis")
 
-# ---------------------------------------
+# --------------------------------------------------
 # Load Data
-# ---------------------------------------
-if not os.path.exists("outputs/company_insights.csv"):
+# --------------------------------------------------
+file_path = "outputs/company_insights.csv"
+
+if not os.path.exists(file_path):
     st.error("company_insights.csv not found.")
     st.stop()
 
-df = pd.read_csv("outputs/company_insights.csv")
+df = pd.read_csv(file_path)
 
-# ---------------------------------------
+# --------------------------------------------------
 # Company Selection
-# ---------------------------------------
+# --------------------------------------------------
 companies = sorted(df["company_id"].unique())
 
 selected_company = st.selectbox(
@@ -33,47 +35,10 @@ company = df[df["company_id"] == selected_company].iloc[0]
 
 st.markdown("---")
 
-# ---------------------------------------
-# Financial Metrics
-# ---------------------------------------
-metrics = [
-    "compounded_sales_growth",
-    "compounded_profit_growth",
-    "stock_price_cagr",
-    "roe"
-]
-
-available_metrics = [
-    m for m in metrics if m in company.index
-]
-
-if available_metrics:
-
-    trend_df = pd.DataFrame({
-        "Metric": available_metrics,
-        "Value": [company[m] for m in available_metrics]
-    })
-
-    st.subheader("Financial Growth Metrics")
-
-    st.dataframe(
-        trend_df,
-        use_container_width=True
-    )
-
-    chart_df = trend_df.set_index("Metric")
-
-    st.bar_chart(chart_df)
-
-else:
-    st.warning("Trend metrics are not available in company_insights.csv")
-
-st.markdown("---")
-
-# ---------------------------------------
-# Rating
-# ---------------------------------------
-st.subheader("Overall Analysis")
+# --------------------------------------------------
+# Overall Metrics
+# --------------------------------------------------
+st.subheader("📊 Overall Analysis")
 
 col1, col2 = st.columns(2)
 
@@ -89,21 +54,60 @@ col2.metric(
 
 st.markdown("---")
 
-# ---------------------------------------
-# Insights
-# ---------------------------------------
-st.subheader("Pros")
+# --------------------------------------------------
+# Confidence Chart
+# --------------------------------------------------
+st.subheader("📈 Confidence Comparison")
+
+chart_df = df.set_index("company_id")[["confidence"]]
+
+st.bar_chart(chart_df)
+
+st.markdown("---")
+
+# --------------------------------------------------
+# Rating Distribution
+# --------------------------------------------------
+st.subheader("⭐ Rating Distribution")
+
+rating_df = df["rating"].value_counts()
+
+st.bar_chart(rating_df)
+
+st.markdown("---")
+
+# --------------------------------------------------
+# Pros
+# --------------------------------------------------
+st.subheader("✅ Financial Strengths")
 
 pros = str(company["pros"]).split(";")
 
 for p in pros:
-    if p.strip():
-        st.success(p.strip())
+    p = p.strip()
+    if p:
+        st.success(p)
 
-st.subheader("Cons")
+# --------------------------------------------------
+# Cons
+# --------------------------------------------------
+st.subheader("⚠ Financial Weaknesses")
 
 cons = str(company["cons"]).split(";")
 
 for c in cons:
-    if c.strip():
-        st.error(c.strip())
+    c = c.strip()
+    if c:
+        st.error(c)
+
+st.markdown("---")
+
+# --------------------------------------------------
+# Complete Record
+# --------------------------------------------------
+st.subheader("📄 Complete Record")
+
+st.dataframe(
+    company.to_frame().T,
+    use_container_width=True
+)

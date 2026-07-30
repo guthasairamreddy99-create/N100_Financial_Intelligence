@@ -74,13 +74,17 @@ st.subheader("📈 Assets vs Liabilities")
 chart_df = pd.DataFrame(
     {
         "Value": [
-            company["total_assets"],
-            company["total_liabilities"]
+            company["equity_capital"],
+            company["reserves"],
+            company["borrowings"],
+            company["total_assets"]
         ]
     },
     index=[
-        "Total Assets",
-        "Total Liabilities"
+        "Equity Capital",
+        "Reserves",
+        "Borrowings",
+        "Total Assets"
     ]
 )
 
@@ -118,3 +122,28 @@ st.download_button(
 )
 
 st.success("Capital allocation analysis completed successfully.")
+
+st.markdown("---")
+
+st.subheader("✅ Strengths")
+
+pros = str(company["pros"]).split(";")
+
+for p in pros:
+    if p.strip():
+        st.success(p.strip())
+
+st.subheader("⚠ Weaknesses")
+
+cons = str(company["cons"]).split(";")
+
+for c in cons:
+    if c.strip():
+        st.error(c.strip())
+
+st.markdown("---")
+
+col1, col2 = st.columns(2)
+
+col1.metric("Rating", company["rating"])
+col2.metric("Confidence", f"{company['confidence']}%")
