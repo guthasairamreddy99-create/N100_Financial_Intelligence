@@ -1,8 +1,7 @@
 
+## 🚀 Live Demo
 
-## 🌐 Live Demo
-
-🔗 https://n100financialintelligence-jzhxxg2ubmafrphcwhy8pw.streamlit.app/
+**Streamlit App:** https://n100financialintelligence-jzhxxg2ubmafrphcwhy8pw.streamlit.app/
 
 
 **Sai Ram**
